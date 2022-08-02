@@ -1,0 +1,99 @@
+body{
+background-color: rgba(220, 221, 221, 0.404);
+font-size: 80%;
+
+}
+
+.bg-teste{
+color: #fffbf3!important;
+background-image: linear-gradient( 3deg, #ac4b4b 10%, #ca1c1c 100%);
+
+}
+
+.cor{
+  background-color: rgba(226, 227, 229, 0.78);
+}
+
+.rodape{
+font-size: 12px; 
+text-align: center; 
+padding: 5px;
+} 
+
+p{
+  font-size: 20px;
+}
+
+input:focus{
+  box-shadow: 0 0 0 0 !important;
+  /*border: 0 none !important;*/
+  outline: 0 !important;
+} 
+
+tr:hover { 
+  background-color: #e2e2e2 !important; 
+  /* background: rgba(128, 128, 128, 0.664) !important; */
+  color: #121b26 !important;  
+}
+
+td {
+  font-weight: 500;
+}
+
+
+thead{
+  border-collapse: separate !important;
+  border-spacing: 0 3px !important; 
+}
+
+.rodape {
+  font-size: 12px; 
+  text-align: center; 
+  padding: 5px;
+}
+
+input{
+  padding: 3px;
+  border: 0.5px solid; 
+}
+
+/* Espaçamento entre a linhas e colunas - INCIO */
+table {
+  border-collapse: separate;
+  border-spacing: 2px 5px; 
+}
+
+tbody, th, tr, td{
+  border-collapse: separate;
+  border-radius: 5px;  
+  text-align: center; 
+}
+/* Espaçamento entre a linhas e colunas - FINAL */
+
+/* EFEITO INPUT - INICIO */
+/*
+@-webkit-keyframes swing{
+    15% {-webkit-transform: translateX(5px); transform: translateX(5px);}
+    30% {-webkit-transform: translateX(-5px);transform: translateX(-5px);} 
+    50% {-webkit-transform: translateX(3px); transform: translateX(3px);}
+    65% {-webkit-transform: translateX(-3px);transform: translateX(-3px);}
+    80% {-webkit-transform: translateX(2px); transform: translateX(2px);}
+    100%{-webkit-transform: translateX(0);   transform: translateX(0);}
+}
+
+@keyframes swing{
+    15% {-webkit-transform: translateX(5px); transform: translateX(5px);}
+    30% {-webkit-transform: translateX(-5px);transform: translateX(-5px);}
+    50% {-webkit-transform: translateX(3px); transform: translateX(3px);}
+    65% {-webkit-transform: translateX(-3px);transform: translateX(-3px);}
+    80% {-webkit-transform: translateX(2px); transform: translateX(2px);}
+    100%{-webkit-transform: translateX(0);   transform: translateX(0);}
+}
+
+.swing:hover{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1.5s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+/* EFEITO INPUT - FINAL */

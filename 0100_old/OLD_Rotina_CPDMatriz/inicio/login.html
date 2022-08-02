@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+
+    <style>
+        body {
+            background: #DDDDDD;
+            padding: 0 auto;
+            font-family: "Segoe UI";
+            font-size: 1em;
+            color: #2E2E2E;
+            width: 800px;
+            text-align: center
+        }
+
+        .rodape {
+            font-size: 12px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .espaco {
+            margin-top: 90px;
+        }
+
+        .texto {
+            font-size: 0.8em;
+        }
+
+        .text-warning {
+            color: #f7ed00;
+        }
+
+        .logo {
+            font-size: 1.6em;
+        }
+
+        .tecno {
+            font-size: 0.8em;
+            color: #F2F2F2;
+        }
+
+        .logia {
+            font-size: 2em;
+            color: #dc3545;
+            font-weight: bold;
+            font-family: "Beauty and the Beast";
+        }
+
+        .logo {
+            font-size: 8em;
+            margin-top: 50px;
+        }
+
+        input:focus, button:focus {
+            box-shadow: none !important;
+            outline: none !important;
+        }
+
+        /* efeito botão entrar */
+        @-webkit-keyframes swing {
+            15% {
+                -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+            }
+
+            30% {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+            }
+
+            50% {
+                -webkit-transform: translateX(3px);
+                transform: translateX(3px);
+            }
+
+            65% {
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+
+            80% {
+                -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+            }
+
+            100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes swing {
+            15% {
+                -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+            }
+
+            30% {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+            }
+
+            50% {
+                -webkit-transform: translateX(3px);
+                transform: translateX(3px);
+            }
+
+            65% {
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+
+            80% {
+                -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+            }
+
+            100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+
+        .swing {
+            -webkit-animation: swing 2s ease;
+            animation: swing 2s ease;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+        }
+
+
+        /*Efeito botão login*/
+        .fifth {
+            border-color: #dc3545;
+            border-radius: 1;
+            color: #dc3545;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            -webkit-transition: color 150ms ease-in-out;
+            transition: color 150ms ease-in-out;
+        }
+
+        .fifth:after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 0;
+            height: 100%;
+            background: #F2F2F2;
+            z-index: -1;
+            -webkit-transition: width 600ms ease-in-out;
+            transition: width 600ms ease-in-out;
+
+            transition: width 600ms ease-in-out;
+        }
+
+        .fifth:hover {
+            color: #dc3545 !important;
+        }
+
+        .fifth:hover:after {
+            width: 110%;
+        }
+
+    </style>
+
+    <title>Rotina - Login</title>
+
+
+</head>
+
+<body class="m-auto">
+
+    <div>
+        <i class="pr-2 text-danger logo"></i><br>
+
+        <span class="logia"></span>
+        <span class="logia"></span>
+    </div>
+
+    <div class="text-center w-50 m-auto swing">
+        <div class="card mt-5 shadow bg-white rounded">
+
+            <div class="card-header  border-bottom mt-3 p-2">
+                <img class="mb-3" src="img/lider.png" width="200px;">
+            </div>
+
+            <!--  <span class="card-header bg-primary border-bottom text-light">AREA DO USUARIO</span> -->
+            <div class="card-body bg-light">
+                <!--  <i class="fab fa-accusoft pr-2 text-danger logo"></i><br> -->
+
+
+                <!-- <img src="D:\DOC_OPERACAO\Documentos Operação\Suporte\Logos Líder\LIDER.png" width="300px;"> -->
+                <form action="" method="post">
+                    <div class="mb-5">
+                        <div class="input-group mb-4 pl-5 pr-5 mt-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-danger text-light"><i
+                                        class="fas fa-user pr-2 text-light"></i></span>
+                            </div>                        
+                            <input id="nome" class="form-control text-uppercase font-weight-bold" type="text" placeholder="" required>                            
+                        </div>
+
+                        <div class="input-group pl-5 pr-5">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-danger text-light"><i
+                                        class="fas fa-unlock-alt pr-2 text-light"></i></span>
+                            </div>
+                            <input id="senha" class="form-control font-weight-bold" type="password" placeholder="" required>
+                        </div>
+
+                        <div class="input-group pl-5 pr-5 mt-5">                            
+                            <button onclick="login()" class="btn fifth form-control bg-danger text-light" type="submit">Login</button>                                                       
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- FIM LOGIN -->
+
+
+    <!--*************************************************************************************-->
+
+    <footer class="card-footer text-center rodape p-2 alert-secondary fixed-bottom">
+        <p>&copy;copyright 2020 - Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script>
+        function login(){
+            var nome = document.getElementById('nome').value
+            var senha = document.getElementById('senha').value
+            var site = 'file://10.15.4.13/doc_operacao/Documentos%20Opera%C3%A7%C3%A3o/Suporte/filiaisInfo/cnpj.html'
+
+            if(nome === 'operacao' && senha === 'op28ac'){
+                window.closed
+                window.open(site)
+        }else{
+            alert('Usuário ou senha invalido!')
+        }
+    }
+    </script>
+</body>
+
+</html>

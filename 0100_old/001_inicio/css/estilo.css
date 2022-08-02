@@ -1,0 +1,169 @@
+/* PARALLAX */
+
+/* configuração padrão */
+body, html {
+  margin: 0;
+  font: 16px "Lato", sans-serif; /* defindo o tamanho da fonte e o tipo */
+  color: #777;
+  height: 95%; /* altura */
+  background-attachment: fixed;
+}
+
+.conteudo {
+  color: #777;
+  background-color: white;
+  text-align: justify; /* texto justificado */
+  padding: 50px 80px;
+}
+
+.contato{
+  background: linear-gradient(50deg, hsla(0, 2%, 90%, 0.336), hsla(340, 3%, 80%, 0.685) ) !important;
+  /* color: white; */
+}
+
+.conteudo:hover {
+ background-color: #f6f2f2; 
+}
+
+/* h2 {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  text-align: center;
+  padding: 50px!important;
+} */
+
+h3{
+  background: rgb(0, 0, 0);
+  opacity: 0.8;
+  padding: 30px;
+  text-align: center;
+  font-size: 3em !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 2em!important;
+}
+
+p {
+  font-size: 0.7em;
+}
+
+/* EFEITO PARALLAX */
+.caixa1, .caixa2, .caixa3, .caixa4 {
+  position: relative; /* para que fosse usado o ABSULTE para o texto dentro da imagem */
+  height: 100%;
+  /*opacity: 2; /* define a opacidade */
+  background-repeat: no-repeat; /* para a imagem não se repetir */
+  background-size: cover; /* para cobrir toda a area */
+  background-position: center; /* para centralizar a imagem */
+  background-attachment: fixed; /* para fixar a imagem */
+}
+
+.caixa1 {
+  background-image: url(../imagens/ti1_1.jpg);
+  /* width: 10%; */
+  /* height: 100px;  */
+}
+
+.caixa2 {
+  background-image: url(../imagens/ti2_1.jpg);
+  /* height: 400px;  */
+}
+
+.caixa3 {
+  background-image: url(../imagens/ti3_1.jpg);
+  /* height: 300px;  */
+}
+
+.caixa4 {
+  background-image: url(../imagens/blur.jpg);
+  /* height: 300px;  */
+}
+
+.conteudo-titulo {
+  position: absolute; /* para poder mudar a posição do titulo */
+  left: 0%; /* usado para centralizar a posição do titulo */
+  top: 45%;
+  width: 100%;
+/*  background: red; */
+  text-align: center;
+  /* color: white; */
+  font-size: 40px;
+  border-radius: 5px;
+ 
+}
+
+/* ultilizado para centralizar o texto */
+.conteudo-titulo span.titulo {
+  /* color: #fff; */
+  background-color: #dc3545;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 5px; /* espaçamento estre as letras do texto */
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+/* teste */
+.caixa1:hover, .caixa2:hover, .caixa3:hover, .caixa4:hover {
+   /*opacity: 0.8; /* define a opacidade  */
+   /* background-color: red; */
+}
+
+footer {
+  text-align: center;
+  /* font-size: 1em;  */
+  /* padding: 20px; */
+  /* height: auto; */
+  background-color: rgba(206, 202, 202, 0.534);
+  padding-top: 15px;
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+  font-size: 1.1em!important;
+}
+
+span.titulo:hover {
+  background-color: #dc3545;
+  color: white;
+  /* cursor: pointer; */
+  border-radius: 5px;
+}
+
+
+/* * {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif, Arial;
+} */
+
+.content {
+  width: 100%;
+  height: 78%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.typedtext {
+  /* margin-top: 20px; */
+  border-right: 3px solid rgb(255, 255, 255);
+  animation: blinkTextCursor 800ms steps(44) infinite normal;
+  /* height: 50px; */
+  /* margin-bottom: 55px; */
+  color: rgb(255, 255, 255);
+  display: block;
+  /* text-transform: uppercase; */
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: black;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}

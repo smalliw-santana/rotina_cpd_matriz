@@ -1,0 +1,52 @@
+#home {
+	background: #ffc107; 
+	color: white;
+}
+
+.caixa {	
+	border-bottom: 1px solid #e5e5e5;	
+}
+
+footer p a {
+	margin: 5px 15px;
+}
+
+.btnEntrar{
+  border-radius: 3px;
+}
+
+ol li{
+	color: black;
+}
+
+h5:hover, .menu{
+	color: #212529d3;
+	cursor: pointer;
+}
+
+.paragrafo a{
+	color: #21252998;
+}
+
+/* a:hover{
+	text-decoration: inherit;
+} */
+
+.paragrafo p {
+	margin-bottom: 0px;
+	text-align: center;
+	font-weight: bold;
+	color: #21252998;
+}
+
+/* .marcador:hover{
+	border-radius: 5px; 
+	background: rgba(0, 0, 0, 0.322); 
+	opacity: 0.9;
+} *
+
+
+
+
+
+
