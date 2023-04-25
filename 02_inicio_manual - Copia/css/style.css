@@ -6,6 +6,23 @@
     --dark: #091E3E;
 }
 
+.titulo{
+    background-image: url(../img/gifs-azul2.gif);  
+    background-color: rgb(211, 211, 211);
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;      
+}
+
+/* .fontNegrito{
+    font-weight: bold!important;
+} */
+
+h3,.titulo{
+    color: white;
+    font-size: 40px;
+    /* text-align: center; */
+}
+
 
 /*** Spinner ***/
 .spinner {
@@ -56,7 +73,6 @@
     visibility: visible;
     opacity: 1;
 }
-
 
 /*** Heading ***/
 h1,
@@ -591,9 +607,9 @@ footer, a{
 
 
 /* backgraund texto menu */
-.textInfo{
-    background-color: #091e3e1a;  
-}
+/* .textInfo{
+    background-color: #aaacad46;  
+} */
 
 .textAlert{
     background-color: #84202818;
