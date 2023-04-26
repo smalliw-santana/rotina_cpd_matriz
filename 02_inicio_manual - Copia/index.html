@@ -246,87 +246,110 @@
                 <!-- FIM IMS / CLOSE-UP -->
 
                 <!-- INICIO ARQUIVOS GFK -->
-                <div class="col-lg-2 col-md-6 wow zoomIn mt-6" data-wow-delay="0.3s">
+                <div class="col-lg-2 col-md-6 wow zoomIn  mt-6" data-wow-delay="0.3s">
                     <div class="service-item bg-white d-flex flex-column align-items-center justify-content-center text-center shadow border rounded-3 box"
                         data-bs-toggle="modal" data-bs-target="#janelaModalgfk">
-                        <i class="fa-brands fa-sellsy text-success mb-3 display-1"></i>
-                        <!-- <img src="img/06.webp" width="150px" alt=""> -->
-                        <h6 class="mb-1 text-item p-0">ARQUIVO GFK</h6>
+                        <i class="fa-brands fa-sellsy text-success mb-3 display-1"></i> <!-- ICONE DO MENU -->
+                        <h6 class="mb-1 text-item">ARQUIVOS GFK</h6>
                     </div>
                     <div id="janelaModalgfk" class="modal fade">
                         <div class="modal-dialog modal-xl">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <h3 class="modal-title">GERAÇÃO DOS ARQUIVOS GFK</h3>
-                                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                                <div class="modal-header titulo">
+                                    <div class="section-title text-center position-relative mx-auto">                                    
+                                        <h1 class="text-light mb-5">GERAÇÃO E TRASMISSÃO DOS ARQUIVOS GFK</h1>    
+                                    </div>
+                                    <button type="button" class="btn btn-close btn-danger"
+                                        data-bs-dismiss="modal"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="ml-4 mb-4">
-                                        <div class="textAlert rounded p-5 ">
-                                            <p class="text-danger">ATENÇÃO!</p>
-                                            <p class="text-dark">Este procedimento só deve ser
-                                                feito se todas as vendas das lojas estiverem atualizadas no periodo de
-                                                Segunda-feira até Domingo.
+                                    <div class="ml-4 mb-4">                                       
+                                        <div class="container marcador-container">
+                                            <div class="row text-dark">                                              
+                                              <div class="marcador col-6 col-sm-2">NOME DA TAREFA:</div>
+                                              <div class="marcador col-6 col-sm-10">ARQUIVOS GFK</div>
+                                              <div class="marcador col-6 col-sm-2">SOFTWARE:</div>
+                                              <div class="marcador col-6 col-sm-10">GFK</div>
+                                              <div class="marcador col-6 col-sm-2">SETOR:</div>
+                                              <div class="marcador col-6 col-sm-10">CPD MATRIZ</div>
+                                              <div class="marcador col-6 col-sm-2">CRIADO EM:</div>
+                                              <div class="marcador col-6 col-sm-10">25/04/2023</div>
+                                            </div>
+                                          </div><hr>                                                                                                              
+                                        <div class="textAlert rounded p-3 mt-5 mb-5">
+                                            <h5 class="text-danger">OBSERVAÇÃO!</h5>
+                                            <p class="text-dark text-uppercase">ESTÁ ROTINA SÓ PODE SER EXECULTADA SE A
+                                                VENDA DE TODAS AS LOJAS ESTIVEREM ATUALIZADAS DE SEGUNDA A DOMINGO.
                                             </p>
-                                        </div><br><br>
-                                        <h5 class=" mb-4"><i
-                                                class="bi bi-arrow-right-circle-fill text-danger"></i>&nbsp;&nbsp;<u>ETAPA
-                                                01 </u></h5>
-                                        <div class="textInfo rounded p-5">
-                                            <a> <i class="bi bi-box-arrow-in-right text-danger"></i>&nbsp;
-                                                Acessar o arquivo (GERADOR_GFK) localizado no desktop.</a>
-                                        </div> <br>
-                                    </div>
-                                    <img class="shadow p-3 mb-5 bg-white rounded" src="../02_manual/img/gfk/001.png"
-                                        width="100%">
-                                    <div class="textInfo rounded p-5">
-                                        <i class="bi bi-arrow-right text-danger"></i><a> 01 - Informe o periodo
-                                            referente a geração dos arquivos.</a><br>
-                                        <i class="bi bi-arrow-right text-danger"></i><a> 02 - Gerar CSV.</a>
-                                    </div><br>
-                                    <img class="shadow p-3 mb-5 bg-white rounded" src="../02_manual/img/gfk/002.png"
-                                        width="100%">
-                                    <img class="shadow p-3 mb-5 bg-white rounded" src="../02_manual/img/gfk/003.png"
-                                        width="100%">
-                                    <img class="shadow p-3 mb-5 bg-white rounded" src="../02_manual/img/gfk/004.png"
-                                        width="100%">
-                                    <h5 class=" mb-4"><i
-                                            class="bi bi-arrow-right-circle-fill text-danger"></i>&nbsp;&nbsp;<u>ETAPA
-                                            02 </u></h5>
-                                    <div class="textInfo rounded p-5">
-                                        <i class="bi bi-arrow-right text-danger"></i><a> Os arquivo são gerados no
-                                            diretório <b> C:\GeradoGFK</b>.</a>
-                                    </div><br>
-                                    <img class="shadow p-3 mb-5 bg-white rounded" src="../02_manual/img/gfk/005.png"
-                                        width="100%">
-                                    <div class="textInfo rounded p-5">
-                                        <i class="bi bi-arrow-right text-danger"></i><a> Compacte o arquivo para
-                                            transmissão.</b>.</a>
-                                    </div><br>
-                                    <img class="shadow p-3 mb-5 bg-white rounded" src="../02_manual/img/gfk/006.png"
-                                        width="100%">
-                                    <div class="ml-4 mb-4">
-                                        <h5 class=" mb-4"><i
-                                                class="bi bi-arrow-right-circle-fill text-danger"></i>&nbsp;&nbsp;<u>ETAPA
-                                                03 </u></h5>
-                                        <div class="textInfo rounded p-5">
-                                            <i class="bi bi-arrow-right text-danger"></i><a> Abrir o aplicativo
-                                                FileZilla e fazer a transmissão do arquivo.</a>
+                                        </div>
+                                        <br>
+                                        <div class="textInfo rounded p-3 text-uppercase">
+                                            <a>ACESSE O SOFTWARE GFK</a><br>
+                                            <a> - 1º INFORME A DATA INICIAL E FINAL</a><br>
+                                            <a> - 2º CLICK NO BOTÃO GERAR CSV</a><br>                                             
                                         </div><br>
-                                        <img class="shadow p-3 mb-5 bg-white rounded" src="../02_manual/img/gfk/007.png"
-                                            width="100%">
+                                        <p class="mb-0">Figura 1 - GFK</p>
+                                        <img class="shadow p-3 mb-5 bg-white rounded alert alert-dark"
+                                            src="/02_manual/img/gfk/GFK_01.png" width="">
+                                    </div>
+                                    <p class="mb-0">Figura 2 - GFK</p>
+                                    <img class="shadow p-3 mb-5 bg-white rounded alert alert-dark"
+                                        src="../02_manual/img/gfk/GFK_02.png" width="100%">
 
-                                        <h5 class=" mb-4"><i
-                                                class="bi bi-arrow-right-circle-fill text-danger"></i>&nbsp;&nbsp;<u>ETAPA
-                                                04 </u></h5>
-                                        <div class="textInfo rounded p-5">
-                                            <i class="bi bi-arrow-right text-danger"></i><a> Fazer o backup do arquivo
-                                                transmitido no diretório abaixo.
-                                            </a>
-                                        </div><br>
-                                        <img class="shadow p-3 mb-5 bg-white rounded" src="../02_manual/img/gfk/008.png"
-                                            width="100%">
-                                    </div>
+                                        <p class="mb-0">Figura 3 - GFK</p>
+                                        <img class="shadow p-3 mb-5 bg-white rounded alert alert-dark"
+                                            src="../02_manual/img/gfk/GFK_03.png" width="100%">
+
+                                            <p class="mb-0">Figura 4 - GFK</p>
+                                        <img class="shadow p-3 mb-5 bg-white rounded alert alert-dark"
+                                            src="../02_manual/img/gfk/GFK_04.png" width="100%">
+
+                                            <div class="textInfo rounded p-3 text-uppercase">
+                                                <a>ACESSE O DIRETÓRIO:</a><br>
+                                                <a><strong>C:\GeradoGFK</strong></a><br>
+                                                <a>VERIFIQUE SE O ARQUIVO <strong>TABELAGFK_230417_230423</strong> ENCONTRASSE NO MESMO.</a><br>   
+                                                <a>E FAÇA A COMPACTAÇÃO DO ARQUIVO.</a><br>                                                                                        
+                                            </div><br>
+
+                                            <p class="mb-0">Figura 5 - GFK</p>
+                                        <img class="shadow p-3 mb-5 bg-white rounded alert alert-dark"
+                                            src="../02_manual/img/gfk/GFK_05.png" width="100%">
+
+                                            <p class="mb-0">Figura 6 - GFK</p>
+                                        <img class="shadow p-3 mb-5 bg-white rounded alert alert-dark"
+                                            src="../02_manual/img/gfk/GFK_09.png" width="100%">
+
+                                            <div class="textAlert rounded p-3 mt-5 mb-5">
+                                                <h5 class="text-danger">OBS:</h5>
+                                                <a class="text-dark text-uppercase">CASO A SEMANA DA GERAÇÃO DOS ARQUIVOS ULTRAPASSE O PERIODO DE UM MÊS PARA O OUTRO. 
+                                                </a><br>
+                                                <a class="text-dark text-uppercase">FAÇA A GERAÇÃO ATÉ O ÚLTIMO DIA DO MÊS, ASSIM COMO MOSTRADO NA IMAGEM ABAIXO. 
+                                                </a><br><br>
+                                                <p class="mb-0">Figura 7 - GFK</p>
+                                                <img class="shadow p-3 mb-5 bg-white rounded alert alert-dark"
+                                                    src="../02_manual/img/gfk/GFK_06.png" width="100%">
+                                            </div>
+
+                                            <div class="textInfo rounded p-3">
+                                                <a>TRASMISSÃO DOS ARQUIVOS VIA FTP, SIGA AS ETAPAS ABAIXO.</a><br><br>
+                                                <a>- ACESSE O PROGRAMA FileZilla</a><br>
+                                                <a>- GERENCIADOR DE SITE (GFK)</a><br>
+                                                <a>- Envie o arquivo compactado para a pasta</a>
+                                            </div><br>
+
+                                            <p class="mb-0">Figura 8 - GFK</p>
+                                            <img class="shadow p-3 mb-5 bg-white rounded alert alert-dark"
+                                                src="../02_manual/img/gfk/GFK_07.png" width="100%">
+
+                                                <p class="mb-0">Figura 9 - GFK</p>
+                                                <img class="shadow p-3 mb-5 bg-white rounded alert alert-dark"
+                                                    src="../02_manual/img/gfk/GFK_08.png" width="100%">
+
+                                                    <div class="textInfo rounded p-3 text-uppercase">
+                                                        <a>após a TRASMISSÃO DOS ARQUIVOS VIA FTP, faça backup dos mesmo no
+                                                            diretório.</a><br>
+                                                        <a><strong>\\10.15.4.13\doc_operacao\GFK</strong></a><br>
+                                                    </div><br>                                    
                                 </div>
                             </div>
                         </div>
