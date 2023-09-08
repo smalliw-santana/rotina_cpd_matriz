@@ -3,302 +3,417 @@
 
 <head>
     <meta charset="utf-8">
-
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.quicksearch/2.3.1/jquery.quicksearch.js"></script>
+    <link rel="icon" href="img/delta.png"><!-- adiciona o icone no titulo da pagina -->
+    <title>GRUPO LÍDER</title>
     <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <link rel="stylesheet" href="css/novo.css">
-
-    <style>
-        body {
-            background: #DDDDDD;
-            padding: 0 auto;
-            font-family: "Segoe UI";
-            font-size: 1em;
-            color: #2E2E2E;
-            width: 800px;
-            text-align: center
-        }
-
-        .rodape,
-        footer,
-        p {
-            font-size: 1em !important;
-            text-align: center;
-            padding: auto;
-        }
-
-        .espaco {
-            margin-top: 90px;
-        }
-
-        .texto {
-            font-size: 0.8em;
-        }
-
-        .text-warning {
-            color: #f7ed00;
-        }
-
-        .logo {
-            font-size: 1.6em;
-        }
-
-        .tecno {
-            font-size: 0.8em;
-            color: #F2F2F2;
-        }
-
-        .logia {
-            font-size: 2em;
-            color: #dc3545;
-            font-weight: bold;
-            font-family: "Beauty and the Beast";
-        }
-
-        .logo {
-            font-size: 8em;
-            margin-top: 50px;
-        }
-
-        input:focus,
-        button:focus {
-            box-shadow: 0 !important;
-            outline: none !important;
-        }
-
-        /* efeito no card */
-        @-webkit-keyframes swing {
-            15% {
-                -webkit-transform: translateX(5px);
-                transform: translateX(5px);
-            }
-
-            30% {
-                -webkit-transform: translateX(-5px);
-                transform: translateX(-5px);
-            }
-
-            50% {
-                -webkit-transform: translateX(3px);
-                transform: translateX(3px);
-            }
-
-            65% {
-                -webkit-transform: translateX(-3px);
-                transform: translateX(-3px);
-            }
-
-            80% {
-                -webkit-transform: translateX(2px);
-                transform: translateX(2px);
-            }
-
-            100% {
-                -webkit-transform: translateX(0);
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes swing {
-            15% {
-                -webkit-transform: translateX(5px);
-                transform: translateX(5px);
-            }
-
-            30% {
-                -webkit-transform: translateX(-5px);
-                transform: translateX(-5px);
-            }
-
-            50% {
-                -webkit-transform: translateX(3px);
-                transform: translateX(3px);
-            }
-
-            65% {
-                -webkit-transform: translateX(-3px);
-                transform: translateX(-3px);
-            }
-
-            80% {
-                -webkit-transform: translateX(2px);
-                transform: translateX(2px);
-            }
-
-            100% {
-                -webkit-transform: translateX(0);
-                transform: translateX(0);
-            }
-        }
-
-        .swing {
-            -webkit-animation: swing 2s ease;
-            animation: swing 2s ease;
-            -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-        }
-
-        /*Efeito botão login*/
-        .fifth {
-            /* border-color: #dc3545; */
-            /* border-top: #006E7F;
-            border-bottom: #006E7F; */
-            border-radius: 1;
-            color: #dc3545;
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-            -webkit-transition: color 800ms ease-in-out;
-            transition: color 800ms ease-in-out;
-        }
-
-        .fifth:after {
-            content: '';
-            position: absolute;
-            display: block;
-            top: 0;
-            left: 50%;
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-            width: 0;
-            height: 100%;
-            background: #F8CB2E;
-            z-index: -1;
-            -webkit-transition: width 800ms ease-in-out;
-            transition: width 800ms ease-in-out;
-
-            transition: width 800ms ease-in-out;
-        }
-
-        .fifth:hover {
-            color: #251D3A !important;
-            font-weight: bold;
-        }
-
-        .fifth:hover:after {
-            width: 110%;
-        }
-    </style>
-<link rel="icon" href="img/delta.png"><!-- adiciona o icone no titulo da pagina -->
-    <title>Rotina - Login</title>
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- estilo customizado -->
+    <link rel="stylesheet" href="css/estilo2.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
-<body class="m-auto">
-    <div>
-        <i class="pr-2 text-danger logo"></i><br>
-    </div>
-    <div class="text-center w-50 m-auto swing">
-        <div class="card mt-5 shadow bg-white rounded">
-            <div class="card-header  border-bottom mt-3 p-2">
-                <img class="mb-3" src="img/lider.png" width="200px;">
-            </div>
-            <div class="card-body bg-light">
-                <form>
-                    <div class="mb-5">
-                        <div class="input-group mb-4 pl-5 pr-5 mt-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text bg-danger text-light"><i
-                                        class="fas fa-user pr-2 text-light"></i></span>
-                            </div>
-                            <input id="nome" class="form-control text-uppercase " type="text" required>
-                        </div>
-
-                        <div class="input-group pl-5 pr-5">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text bg-danger text-light"><i
-                                        class="fas fa-unlock-alt pr-2 text-light"></i></span>
-                            </div>
-                            <input id="senha" class="form-control" type="password" required>
-                        </div>
-
-                        <div class="input-group pl-5 pr-5 mt-5">
-                            <button onclick="login()"
-                                class="btn fifth form-control bg-danger text-light font-weight-bold" type="button"
-                                data-toggle="modal" data-target="#exampleModalCenter">Login</button>
-                        </div>
+<body class="m-4 hold-transition sidebar-mini">
+    <div class="wrapper shadow bg-white rounded">
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-12">
+                <!-- col-12 -->
+                <div class="card">
+                    <div class="p-4 card-header bg-gradient-light text-center">
+                        <img src="img/grupolider2.png" width="200">
                     </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- FIM LOGIN -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-uppercase lead" id="exampleModalLongTitle">usuário ou senha estão
-                        incorretos</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>                
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Retornar</button>
+                    <!-- /.card-header -->
+                    <div class="card-body table-responsive p-1" style="height: auto;">
+                        <table id="tabela" class="table table-hover table table-head-fixed text-nowrap text-uppercase">
+                            <div class="p-2 mt-5 text-center">
+                                <h4 class="text-uppercase lead">Consulta cadastro de filiais</h4>
+                            </div>
+                            <div class="mt-5 input-group mb-5 text-center center justify-content-center">
+                                <input class="col-3 form-control text-uppercase" id="txt_consulta" placeholder="">
+                                <span class="input-group-text bg-teste text-light"><img src="img/search-solid.svg"
+                                        width="16"></span>
+                            </div>
+                            <thead>
+                                <tr>
+                                    <th class="text-center bg-teste">CÓDIGO RMS</th>
+                                    <th class="bg-teste">LOJA / DESCRIÇÃO</th>
+                                    <th class="bg-teste">CNPJ</th>
+                                    <th class="bg-teste">CEP</th>
+                                    <th class="bg-teste">ENDEREÇO</th>
+                                    <th class="bg-teste">BAIRRO</th>
+                                    <th class="bg-teste">CIDADE / MUNICIPIO</th>
+                                    <th class="bg-teste">TELEFONE</th>
+                                </tr>
+                            </thead>
+                    </div>
+                    <tbody>
+                        <!-- LOJA 01 -->
+                        <tr class="cor">
+                            <td>1-9</td>
+                            <td>l01 Líder condor</td>
+                            <td>05.054.671/0016-35</td>
+                            <td>66065270</td>
+                            <td>AV.ALCINDO CACELA Nº 3855</td>
+                            <td>Condor</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1001</td>
+                        </tr>
+                        <!-- LOJA 02 -->
+                        <tr>
+                            <td>2-7</td>
+                            <td>l02 Líder A.Cacela</td>
+                            <td>05.054.671/0002-30</td>
+                            <td>66040020</td>
+                            <td>Av. Alcindo Cacela nº 2177</td>
+                            <td>Cremação</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1002</td>
+                        </tr>
+                        <!-- LOJA 03 -->
+                        <tr class="cor">
+                            <td>3-5</td>
+                            <td>l03 Líder doca</td>
+                            <td>05.054.671/0005-82</td>
+                            <td>66053000</td>
+                            <td>Av.Visc.de Souza Franco nº 1088</td>
+                            <td>Umarizal</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1003</td>
+                        </tr>
+                        <!-- LOJA 04 -->
+                        <tr>
+                            <td>4-3</td>
+                            <td>l04 Líder Óbidos</td>
+                            <td>05.054.671/0006-63</td>
+                            <td>66020440</td>
+                            <td>Rua. Óbidos nº 466</td>
+                            <td>Cidade Velha</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1004</td>
+                        </tr>
+                        <!-- LOJA 05 -->
+                        <tr class="cor">
+                            <td>5-1</td>
+                            <td>l05 Líder Castanheira</td>
+                            <td>05.054.671/0007-44</td>
+                            <td>66630505</td>
+                            <td>Rod. Br. 316 s/n Km 01 Suc 001</td>
+                            <td>Castanheira</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1005</td>
+                        </tr>
+                        <!-- LOJA 06 -->
+                        <tr>
+                            <td>6-0</td>
+                            <td>l06 Magazan Castanheira</td>
+                            <td>05.054.671/0008-25</td>
+                            <td>66630505</td>
+                            <td>Rod. Br. 316 s/n Km 01 Suc 015</td>
+                            <td>Castanheira</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1006</td>
+                        </tr>
+                        <!-- LOJA 07 -->
+                        <tr class="cor">
+                            <td>7-8</td>
+                            <td>l07 Líder Praça Brasil</td>
+                            <td>05.054.671/0009-06</td>
+                            <td>66050100</td>
+                            <td>Tv. D. Pedro nº 1083</td>
+                            <td>umarizal</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1007</td>
+                        </tr>
+                        <!-- LOJA 08 -->
+                        <tr>
+                            <td>8-6</td>
+                            <td>l08 Líder Batista Campos</td>
+                            <td>05.054.671/0010-40</td>
+                            <td>66025230</td>
+                            <td>Tv.Padre Eutiquio nº 1845</td>
+                            <td>Batista Campos</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1008</td>
+                        </tr>
+                        <!-- LOJA 09 -->
+                        <tr class="cor"">
+                            <td>9-4</td>
+                            <td>l09 Líder Humaita</td>
+                            <td>05.054.671/0011-20</td>
+                            <td>66093110</td>
+                            <td>Tv. Humaitá nº 2084</td>
+                            <td>Marco</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1009</td>
+                        </tr>
+                        <!-- LOJA 10 -->
+                        <tr>
+                            <td>10-8</td>
+                            <td>l10 Líder castanhal</td>
+                            <td>05.054.671/0012-01</td>
+                            <td>68742400</td>
+                            <td>Av. Floriano Peixoto nº 1391</td>
+                            <td>Centro</td>
+                            <td>Castanhal / Pa</td>
+                            <td>(91) 4008-1010</td>
+                        </tr>
+                        <!-- LOJA 11 -->
+                        <tr class=" cor">
+                            <td>11-6</td>
+                            <td>L11 LÍDER ICOARACI</td>
+                            <td>05.054.671/0013-92</td>
+                            <td>66810120</td>
+                            <td>AV 15 DE AGOSTO nº 631</td>
+                            <td>ICOARACI</td>
+                            <td>icoaraci / Pa</td>
+                            <td>(91) 4008-1011</td>
+                        </tr>
+                        <!-- LOJA 12 -->
+                        <tr>
+                            <td>12-4</td>
+                            <td>L12 LIDER BR</td>
+                            <td>05.054.671/0014-73</td>
+                            <td>67013970</td>
+                            <td>ROD BR-316 KM 02 S/N L12 BR </td>
+                            <td>GUANABARA</td>
+                            <td>Ananindeua / Pa</td>
+                            <td>(91) 4008-1012</td>
+                        </tr>
+                        <!-- LOJA 17 -->
+                        <tr class="cor"">
+                            <td>17-5</td>
+                            <td>L17 LIDER CANUDOS</td>
+                            <td>05.054.671/0018-05</td>
+                            <td>66070080</td>
+                            <td>AV CEARA nº 518</td>
+                            <td>CANUDOS</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1017</td>
+                        </tr>
+                        <!-- LOJA 18 -->
+                        <tr>
+                            <td>18-3</td>
+                            <td>L18 LIDER C.NOVA</td>
+                            <td>05.054.671/0019-88</td>
+                            <td>67140570</td>
+                            <td>CNJ CIDADE NOVA VI - WE 72 NUM 762</td>
+                            <td>COQUEIRO</td>
+                            <td>Ananindeua / Pa</td>
+                            <td>(91) 4008-1018</td>
+                        </tr>
+                        <!-- LOJA 19 -->
+                        <tr class=" cor">
+                            <td>19-1</td>
+                            <td>L19 MAG CASTANHAL</td>
+                            <td>05.054.671/0020-11</td>
+                            <td>68742400</td>
+                            <td>AV RIO BRANCO nº 2321</td>
+                            <td>CENTRO</td>
+                            <td>castanhal / Pa</td>
+                            <td>(91) 4008-1019</td>
+                        </tr>
+                        <!-- LOJA 24 -->
+                        <tr>
+                            <td>24-8</td>
+                            <td>L24 LIDER QUINTINO</td>
+                            <td>05.054.671/0024-45</td>
+                            <td>66405580</td>
+                            <td>TRAVESSA QUINTINO BOCAIUVA nº 1929</td>
+                            <td>CREMAÇÃO</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1024</td>
+                        </tr>
+                        <!-- LOJA 27 -->
+                        <tr class="cor">
+                            <td>27-2</td>
+                            <td>L27 LIDER PEDREIRA</td>
+                            <td>05.054.671/0027-98</td>
+                            <td>66085005</td>
+                            <td>AV PEDRO MIRANDA nº 689</td>
+                            <td>PEDREIRA</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1027</td>
+                        </tr>
+                        <!-- LOJA 28 -->
+                        <tr>
+                            <td>28-0</td>
+                            <td>L28 LIDER INDEPENDENCIA</td>
+                            <td>05.054.671/0028-79</td>
+                            <td>66635915</td>
+                            <td>ROD AUGUSTO MONTENEGRO KM-04 nº 3010</td>
+                            <td>PARQUE VERDE</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1028</td>
+                        </tr>
+                        <!-- LOJA 31 -->
+                        <tr class="cor">
+                            <td>31-0</td>
+                            <td>L31 LIDER BARCARENA</td>
+                            <td>05.054.671/0031-74</td>
+                            <td>68447000</td>
+                            <td>AV BATISTA CAMPOS CJ 32 - QUA 257</td>
+                            <td>NUCLEO URBANO </td>
+                            <td>Barcarena / Pa</td>
+                            <td>(91) 4008-1031</td>
+                        </tr>
+                        <!-- LOJA 32 -->
+                        <tr>
+                            <td>32-9</td>
+                            <td>L32 LIDER MARABA</td>
+                            <td>05.054.671/0032-55</td>
+                            <td>68507640</td>
+                            <td>ROD BR-230 TRANSAMAZONICA KM4/QD12</td>
+                            <td>NOVA MARABA</td>
+                            <td>marabá / Pa</td>
+                            <td>(91) 4008-1042</td>
+                        </tr>
+                        <!-- LOJA 33 -->
+                        <tr class="cor">
+                            <td>33-7</td>
+                            <td>L33 LIDER A. MONTENEGRO</td>
+                            <td>05.054.671/0034-17</td>
+                            <td>66833000</td>
+                            <td>ROD AUGUSTO MONTENEGRO,S/N KM8</td>
+                            <td>TAPANA</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1031</td>
+                        </tr>
+                        <!-- LOJA 37 -->
+                        <tr>
+                            <td>37-0</td>
+                            <td>L37 LIDER CAPANEMA</td>
+                            <td>05.054.671/0037-60</td>
+                            <td>68700120</td>
+                            <td>TRAV. JUSTO CHERMONT nº 200</td>
+                            <td>CENTRO</td>
+                            <td>capanema / Pa</td>
+                            <td>(91) 4008-1037</td>
+                        </tr>
+                        <!-- LOJA 38 -->
+                        <tr class="cor">
+                            <td>38-8</td>
+                            <td>L38 LIDER ABAETETUBA</td>
+                            <td>05.054.671/0038-40</td>
+                            <td>68440000</td>
+                            <td>ROD.DOUTOR JOAO MIRANDA nº 2326</td>
+                            <td>CENTRO</td>
+                            <td>ABAETETUBA / Pa</td>
+                            <td>(91) 4008-1038</td>
+                        </tr>
+                        <!-- LOJA 40 -->
+                        <tr>
+                            <td>40-0</td>
+                            <td>L40 LIDER MARAMBAIA </td>
+                            <td>05.054.671/0040-65</td>
+                            <td>66615005</td>
+                            <td>AV. TAVARES BASTOS nº 827 </td>
+                            <td>MARAMBAIA</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1040</td>
+                        </tr>
+                        <!-- LOJA 41 -->
+                        <tr class="cor">
+                            <td>41-8</td>
+                            <td>L41 MAGAZAN CASA</td>
+                            <td>05.054.671/0041-46</td>
+                            <td>66645000</td>
+                            <td>ROD BR 316 S/N 1 PISO SUC 060</td>
+                            <td>CASTANHEIRA</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1041</td>
+                        </tr>
+                        <!-- LOJA 42 -->
+                        <tr>
+                            <td>42-6</td>
+                            <td>L42 LIDER SALINOPOLIS</td>
+                            <td>05.054.671/0042-27</td>
+                            <td>68721000 </td>
+                            <td>AV.DR.MIGUEL SANTA BRIGIDA S/N</td>
+                            <td>SAO TOME</td>
+                            <td>SALINOPÓLIS / Pa</td>
+                            <td>(91) 4008-1042</td>
+                        </tr>
+                        <!-- LOJA 43 -->
+                        <tr class="cor">
+                            <td>43-4</td>
+                            <td>L43 ÓTICA</td>
+                            <td>05.054.671/0043-08</td>
+                            <td>66645000 </td>
+                            <td>RD BR316 SN 2 PISO SUCS 137/8/9/140</td>
+                            <td>CASTANHEIRA</td>
+                            <td>Belém / Pa</td>
+                            <td>(91) 4008-1043</td>
+                        </tr>
+                        <!-- LOJA 44 -->
+                         <tr>
+                            <td>44-2</td>
+                            <td>L44 LIDER GUAMA</td>
+                            <td>05.054.671/0056-22</td>
+                            <td>66073044</td>
+                            <td>RUA AUGUSTO CORREA</td>
+                            <td>GUAMA</td>
+                            <td>BELEM / PA</td>
+                            <td>(91) 4008-1044</td>
+                        </tr>
+                        <!-- LOJA 54 -->
+                        <tr class="cor">
+                            <td>54-0</td>
+                            <td>L54 LIDER DUQUE</td>
+                            <td>05.054.671/0047-31</td>
+                            <td>66093029</td>
+                            <td>AV. DUQUE DE CAXIAS Nº 1101</td>
+                            <td>MARCO</td>
+                            <td>BELEM / PA</td>
+                            <td>(91) 4008-1054</td>
+                        </tr>
+                        <hr>
+                    </tbody>
+                    </table>
                 </div>
+                <!-- /.card-body -->
             </div>
+            <!-- /.card -->
         </div>
     </div>
-    <!-- Modal Fim-->
+    </div>
 
-    <footer class="card-footer text-center rodape p-2 alert-secondary fixed-bottom">
-        <p>&copy;copyright 2022 - Todos os direitos reservados.</p>
+    <!-- ./wrapper -->
+    <footer class="m-4 text-center">
+        Copyright &copy; 2022 <a href="../01_inicio_rotina/index.html">CPD MATRIZ</a> - Todos os direitos reservados.
     </footer>
 
-
+    <!-- INICIO SCRIPTS -->
     <script>
-        function login() {
-            var nome = document.getElementById('nome').value
-            var senha = document.getElementById('senha').value
-            var site = 'file://10.15.4.13/doc_operacao/Documentos%20Opera%C3%A7%C3%A3o/Suporte/filiaisInfo/cnpj2.html'
+        $('input#txt_consulta').quicksearch('table#tabela tbody tr');
 
-            if (nome === 'admin' && senha === 'op28ac') {
-                nome = document.getElementById('nome').value = ''
-                senha = document.getElementById('senha').value = ''
-                window.location.href = site;
-            } else {
-                nome = document.getElementById('nome').value = ''
-                senha = document.getElementById('senha').value = ''
-                $('#exampleModalCenter').modal()
-            }
+        function pesquisa(){
+            $('input#txt_consulta').quicksearch('table#tabela tbody tr');
         }
-
-        /* tecla ENTER presionada */
-        document.addEventListener("keypress", function (e) {
-            if (e.key === 'Enter') {
-                login()
-            }
-        });
-       
     </script>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+    <!-- FINAL SCRIPTS -->
+
 </body>
 
 </html>

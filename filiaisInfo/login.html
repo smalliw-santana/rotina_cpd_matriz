@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" href="css/novo.css">
+
+    <style>
+        body {
+            background: #DDDDDD;
+            padding: 0 auto;
+            font-family: "Segoe UI";
+            font-size: 1em;
+            color: #2E2E2E;
+            width: 800px;
+            text-align: center
+        }
+
+        .rodape,
+        footer,
+        p {
+            font-size: 1em !important;
+            text-align: center;
+            padding: auto;
+        }
+
+        .espaco {
+            margin-top: 90px;
+        }
+
+        .texto {
+            font-size: 0.8em;
+        }
+
+        .text-warning {
+            color: #f7ed00;
+        }
+
+        .logo {
+            font-size: 1.6em;
+        }
+
+        .tecno {
+            font-size: 0.8em;
+            color: #F2F2F2;
+        }
+
+        .logia {
+            font-size: 2em;
+            color: #dc3545;
+            font-weight: bold;
+            font-family: "Beauty and the Beast";
+        }
+
+        .logo {
+            font-size: 8em;
+            margin-top: 50px;
+        }
+
+        input:focus,
+        button:focus {
+            box-shadow: 0 !important;
+            outline: none !important;
+        }
+
+        /* efeito no card */
+        @-webkit-keyframes swing {
+            15% {
+                -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+            }
+
+            30% {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+            }
+
+            50% {
+                -webkit-transform: translateX(3px);
+                transform: translateX(3px);
+            }
+
+            65% {
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+
+            80% {
+                -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+            }
+
+            100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes swing {
+            15% {
+                -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+            }
+
+            30% {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+            }
+
+            50% {
+                -webkit-transform: translateX(3px);
+                transform: translateX(3px);
+            }
+
+            65% {
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+
+            80% {
+                -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+            }
+
+            100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+
+        .swing {
+            -webkit-animation: swing 2s ease;
+            animation: swing 2s ease;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+        }
+
+        /*Efeito botão login*/
+        .fifth {
+            /* border-color: #dc3545; */
+            /* border-top: #006E7F;
+            border-bottom: #006E7F; */
+            border-radius: 1;
+            color: #dc3545;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            -webkit-transition: color 800ms ease-in-out;
+            transition: color 800ms ease-in-out;
+        }
+
+        .fifth:after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 0;
+            height: 100%;
+            background: #F8CB2E;
+            z-index: -1;
+            -webkit-transition: width 800ms ease-in-out;
+            transition: width 800ms ease-in-out;
+
+            transition: width 800ms ease-in-out;
+        }
+
+        .fifth:hover {
+            color: #251D3A !important;
+            font-weight: bold;
+        }
+
+        .fifth:hover:after {
+            width: 110%;
+        }
+    </style>
+<link rel="icon" href="img/delta.png"><!-- adiciona o icone no titulo da pagina -->
+    <title>Rotina - Login</title>
+</head>
+
+<body class="m-auto">
+    <div>
+        <i class="pr-2 text-danger logo"></i><br>
+    </div>
+    <div class="text-center w-50 m-auto swing">
+        <div class="card mt-5 shadow bg-white rounded">
+            <div class="card-header  border-bottom mt-3 p-2">
+                <img class="mb-3" src="img/lider.png" width="200px;">
+            </div>
+            <div class="card-body bg-light">
+                <form>
+                    <div class="mb-5">
+                        <div class="input-group mb-4 pl-5 pr-5 mt-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-danger text-light"><i
+                                        class="fas fa-user pr-2 text-light"></i></span>
+                            </div>
+                            <input id="nome" class="form-control text-uppercase " type="text" required>
+                        </div>
+
+                        <div class="input-group pl-5 pr-5">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-danger text-light"><i
+                                        class="fas fa-unlock-alt pr-2 text-light"></i></span>
+                            </div>
+                            <input id="senha" class="form-control" type="password" required>
+                        </div>
+
+                        <div class="input-group pl-5 pr-5 mt-5">
+                            <button onclick="login()"
+                                class="btn fifth form-control bg-danger text-light font-weight-bold" type="button"
+                                data-toggle="modal" data-target="#exampleModalCenter">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- FIM LOGIN -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase lead" id="exampleModalLongTitle">usuário ou senha estão
+                        incorretos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Retornar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Fim-->
+
+    <footer class="card-footer text-center rodape p-2 alert-secondary fixed-bottom">
+        <p>&copy;copyright 2022 - Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script>
+        function login() {
+            var nome = document.getElementById('nome').value
+            var senha = document.getElementById('senha').value
+            var site = 'file://10.15.4.13/doc_operacao/Documentos%20Opera%C3%A7%C3%A3o/Suporte/filiaisInfo/cnpj2.html'
+
+            if (nome === 'admin' && senha === 'op28ac') {
+                nome = document.getElementById('nome').value = ''
+                senha = document.getElementById('senha').value = ''
+                window.location.href = site;
+            } else {
+                nome = document.getElementById('nome').value = ''
+                senha = document.getElementById('senha').value = ''
+                $('#exampleModalCenter').modal()
+            }
+        }
+
+        /* tecla ENTER presionada */
+        document.addEventListener("keypress", function (e) {
+            if (e.key === 'Enter') {
+                login()
+            }
+        });
+       
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
