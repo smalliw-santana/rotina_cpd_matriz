@@ -215,7 +215,7 @@
                                 <span class="input-group-text bg-danger text-light"><i
                                         class="fas fa-user pr-2 text-light"></i></span>
                             </div>
-                            <input id="nome" class="form-control text-uppercase " type="text" required>
+                            <input id="nome" class="form-control text-uppercase text-center" type="text" required placeholder="USUÁRIO">
                         </div>
 
                         <div class="input-group pl-5 pr-5">
@@ -223,7 +223,7 @@
                                 <span class="input-group-text bg-danger text-light"><i
                                         class="fas fa-unlock-alt pr-2 text-light"></i></span>
                             </div>
-                            <input id="senha" class="form-control" type="password" required>
+                            <input id="senha" class="form-control text-center" type="password" required placeholder="SENHA">
                         </div>
 
                         <div class="input-group pl-5 pr-5 mt-5">
@@ -267,7 +267,8 @@
         function login() {
             var nome = document.getElementById('nome').value
             var senha = document.getElementById('senha').value
-            var site = 'file://10.15.4.13/doc_operacao/Documentos%20Opera%C3%A7%C3%A3o/Suporte/filiaisInfo/cnpj2.html'
+            // var site = 'file://10.15.4.13/doc_operacao/Documentos%20Opera%C3%A7%C3%A3o/Suporte/filiaisInfo/cnpj2.html'
+            var site = 'https://smalliw-santana.github.io/rotina_cpd_matriz/01_inicio_rotina/index.html'
 
             if (nome === 'admin' && senha === 'op28ac') {
                 nome = document.getElementById('nome').value = ''
